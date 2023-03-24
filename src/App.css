@@ -1,0 +1,175 @@
+body {
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+ul {
+  list-style: none;
+}
+li {
+  border-left: 4px solid var(--green100);
+  border-radius: 4px 0 0 4px;
+  padding-left: 0.5rem;
+}
+li > h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black100);
+}
+li > h6 {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--black200);
+}
+li > h5 {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--black100);
+}
+li > button {
+  font-weight: 400;
+  font-size: 10px;
+  border: transparent;
+  cursor: pointer;
+}
+.header {
+  padding: 1rem;
+}
+.mainC {
+}
+.inputsContainer {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem 1rem;
+  border: 1px solid var(--black20);
+}
+.inputsContainer > form > input {
+  width: 200px;
+  padding: 0.7rem;
+  border: transparent;
+}
+.inputsContainer > form > select {
+  width: 225px;
+  padding: 0.7rem;
+  border: transparent;
+}
+.inputsContainer > form > button {
+  background-color: var(--pink100);
+  color: var(--white100);
+  border: transparent;
+  padding: 0.6rem 4.6rem;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.containerTotal {
+  margin-left: 1rem;
+}
+.containerTotal > p {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--black200);
+  margin: 0;
+}
+.containerTotal > span {
+  display: flex;
+  gap: 5rem;
+}
+.containerTotal > span > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black100);
+  width: 200px;
+}
+.containerTotal > span > h5 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--pink100);
+  margin: 1em 0;
+  width: 200px;
+}
+.mainC > span > h5 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black100);
+}
+.mainC > span > h3 {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--black200);
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin-left: 15rem;
+  }
+  .inputsContainer {
+    width: 250px;
+  }
+  .containerTotal > span {
+    max-width: 282px;
+  }
+  .containerTotal > span > h3 {
+    width: 150px;
+  }
+  .mainC > span {
+    position: fixed;
+    top: 100px;
+    right: 50vw;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .App > p {
+    position: fixed;
+    top: 150px;
+    right: 32vw;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--black200);
+  }
+  ul {
+    position: fixed;
+    top: 150px;
+    right: 32vw;
+    max-height: 370px;
+    min-width: 400px;
+    gap: 1rem;
+    overflow: scroll;
+  }
+  li {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    width: 400px;
+  }
+  li > h4 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  li > h6 {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+  }
+  li > h5 {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    position: relative;
+    width: 80px;
+    top: -40%;
+    right: -69%;
+  }
+  li > button {
+    position: relative;
+    top: 50px;
+    right: -50px;
+    width: 50px;
+  }
+}
