@@ -6,9 +6,12 @@ ul {
   list-style: none;
 }
 li {
-  border-left: 4px solid var(--green100);
+  border-left: 4px solid var(--grey100);
   border-radius: 4px 0 0 4px;
   padding-left: 0.5rem;
+}
+.typeE {
+  border-left: 4px solid var(--green100);
 }
 li > h4 {
   font-weight: 700;
