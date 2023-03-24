@@ -23,7 +23,6 @@ function App() {
   const totalValue = listData.reduce((accumulator, currentValue) => {
     return currentValue.type === "Entrada" ? accumulator + currentValue.value : accumulator - currentValue.value;
   }, 0);
-  console.log(totalValue);
 
   function removeOne(oneId) {
     const newOneList = listData.filter((data) => data.id !== oneId);
