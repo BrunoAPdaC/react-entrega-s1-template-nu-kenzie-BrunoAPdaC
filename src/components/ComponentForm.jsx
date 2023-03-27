@@ -1,6 +1,5 @@
 export function Form({ formData, setFormData, newList, listData }) {
-  function submit(event) {
-    event.preventDefault();
+  function submit() {
     newList(formData);
   }
 
