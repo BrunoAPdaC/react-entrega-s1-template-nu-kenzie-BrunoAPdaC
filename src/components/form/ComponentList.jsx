@@ -1,6 +1,6 @@
 import { Cards } from "./ComponentCard";
 
-export function ListCD({ listData, removeOne }) {
+export function ListCD({ listData, removeOne, setFormData }) {
   return (
     <>
       {listData.length > 0 ? (

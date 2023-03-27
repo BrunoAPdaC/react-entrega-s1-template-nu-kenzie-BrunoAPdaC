@@ -1,6 +1,12 @@
-export function Form({ formData, setFormData, newList, listData }) {
-  function submit() {
+export function Form({ formData, setFormData, newList }) {
+  function submit(event) {
+    event.preventDefault();
     newList(formData);
+    setFormData({
+      description: "",
+      value: "",
+      type: "",
+    });
   }
 
   return (
@@ -34,7 +40,7 @@ export function Form({ formData, setFormData, newList, listData }) {
           <option value="Entrada">Entrada</option>
           <option value="Despesas">Despesas</option>
         </select>
-        <button type="submit">Inserir valor</button>
+        <button type="submit ">Inserir valor</button>
       </form>
     </section>
   );

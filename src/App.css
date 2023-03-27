@@ -52,16 +52,23 @@ li > button {
   margin-right: 1rem;
   padding: 1rem 1rem;
   border: 1px solid var(--black20);
+  width: 250px;
+  font-family: var(--font);
+}
+button {
+  font-family: var(--font);
 }
 .inputsContainer > form > input {
   width: 200px;
   padding: 0.7rem;
   border: transparent;
+  font-family: var(--font);
 }
 .inputsContainer > form > select {
   width: 225px;
   padding: 0.7rem;
   border: transparent;
+  font-family: var(--font);
 }
 .inputsContainer > form > button {
   background-color: var(--pink100);
@@ -73,6 +80,7 @@ li > button {
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+  font-family: var(--font);
 }
 .containerTotal {
   margin-left: 1rem;
@@ -134,7 +142,7 @@ li > button {
   .App > p {
     position: fixed;
     top: 150px;
-    right: 32vw;
+    right: 30.5vw;
     font-weight: 700;
     font-size: 22px;
     color: var(--black200);

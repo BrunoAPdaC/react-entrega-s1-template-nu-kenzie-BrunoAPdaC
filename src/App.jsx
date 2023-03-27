@@ -1,9 +1,9 @@
 import "./App.css";
 import "./globalStyles.css";
-import { Header } from "./components/ComponentHeader";
-import { Main } from "./components/ComponentMain";
-import { Form } from "./components/ComponentForm";
-import { ListCD } from "./components/ComponentList";
+import { Header } from "./components/header/ComponentHeader";
+import { Main } from "./components/main/ComponentMain";
+import { Form } from "./components/form/ComponentForm";
+import { ListCD } from "./components/form/ComponentList";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -43,7 +43,7 @@ function App() {
           <p>O valor se refere ao saldo</p>
         </div>
       </Main>
-      <ListCD listData={listData} removeOne={removeOne} />
+      <ListCD listData={listData} removeOne={removeOne} setFormData={setFormData} />
     </div>
   );
 }
