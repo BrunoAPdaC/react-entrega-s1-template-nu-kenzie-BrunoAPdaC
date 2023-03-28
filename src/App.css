@@ -9,6 +9,7 @@ form {
 ul {
   list-style: none;
   font-family: var(--font);
+  padding-left: 1rem;
 }
 li {
   border-left: 4px solid var(--grey100);
@@ -47,6 +48,7 @@ li > button {
 }
 .mainC {
 }
+
 .inputsContainer {
   margin-top: 3rem;
   margin-left: 1rem;
@@ -87,7 +89,7 @@ button {
   margin-left: 1rem;
   margin-top: 1rem;
   border: 1px solid #e9ecef;
-  width: 270px;
+  width: 250px;
   padding: 1rem;
 }
 .containerTotal > p {
@@ -113,15 +115,20 @@ button {
   margin: 1em 0;
   width: 200px;
 }
+
 .mainC > span > h5 {
   font-weight: 700;
   font-size: 16px;
   color: var(--black100);
+  margin-left: 1rem;
 }
 .mainC > span > h3 {
   font-weight: 700;
   font-size: 22px;
   color: var(--black200);
+}
+.App > p {
+  margin-left: 1rem;
 }
 @media (min-width: 768px) {
   .mainC > span {
@@ -203,7 +210,7 @@ button {
   ul {
     position: fixed;
     top: 150px;
-    right: 32vw;
+    right: 31.2vw;
     min-width: 400px;
     max-height: 450px;
     gap: 1rem;
@@ -216,6 +223,7 @@ button {
     flex-wrap: wrap;
     margin-bottom: 1rem;
     width: 350px;
+    background-color: #f8f9fa;
   }
   li > h4 {
     font-weight: 700;
