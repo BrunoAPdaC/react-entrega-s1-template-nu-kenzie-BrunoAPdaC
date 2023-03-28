@@ -43,6 +43,7 @@ li > button {
 }
 .header {
   padding: 1rem;
+  box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
 }
 .mainC {
 }
@@ -84,6 +85,10 @@ button {
 }
 .containerTotal {
   margin-left: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #e9ecef;
+  width: 270px;
+  padding: 1rem;
 }
 .containerTotal > p {
   font-weight: 400;
@@ -118,13 +123,61 @@ button {
   font-size: 22px;
   color: var(--black200);
 }
-
+@media (min-width: 768px) {
+  .mainC > span {
+    position: fixed;
+    top: 100px;
+    right: 40%;
+  }
+  .App > p {
+    position: fixed;
+    top: 170px;
+    right: 17%;
+  }
+  ul {
+    position: fixed;
+    top: 150px;
+    right: 5vw;
+    max-height: 450px;
+    gap: 1rem;
+    overflow-y: scroll;
+    width: 400px;
+  }
+  li {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    width: 200px;
+  }
+  li > h4 {
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+  li > h6 {
+    margin: 0;
+    margin-top: 0.7rem;
+  }
+  li > h5 {
+    margin: 0;
+    position: relative;
+    top: 15px;
+    right: -50%;
+  }
+  li > button {
+    position: relative;
+    top: 20px;
+    right: -50%;
+    width: 50px;
+  }
+}
 @media (min-width: 1440px) {
   body {
     margin-left: 15rem;
   }
   .inputsContainer {
-    width: 250px;
+    width: 270px;
   }
   .containerTotal > span {
     max-width: 282px;
@@ -142,7 +195,7 @@ button {
   .App > p {
     position: fixed;
     top: 150px;
-    right: 30.5vw;
+    right: 28.8vw;
     font-weight: 700;
     font-size: 22px;
     color: var(--black200);
@@ -151,10 +204,10 @@ button {
     position: fixed;
     top: 150px;
     right: 32vw;
-    max-height: 370px;
     min-width: 400px;
+    max-height: 450px;
     gap: 1rem;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   li {
     height: 70px;
@@ -162,7 +215,7 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 1rem;
-    width: 400px;
+    width: 350px;
   }
   li > h4 {
     font-weight: 700;
